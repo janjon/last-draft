@@ -33,8 +33,8 @@ export default class ExampleEditor extends Component {
   onChange(editorState) {
     this.setState({ value: editorState })
     /* You would normally save this to your database here instead of logging it */
-    console.log(editorStateToHtml(editorState))
-    //console.log(editorStateToJSON(editorState))
+    // console.log(editorStateToHtml(editorState))
+    console.log(editorStateToJSON(editorState))
   }
 
   render() {
